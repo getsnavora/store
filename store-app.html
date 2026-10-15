@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Navora Store App — Navora for Stores</title>
+<meta name="description" content="Run your Navora store from one place: orders, products, stock, riders and settlements in the Navora Store App.">
+<meta name="theme-color" content="#EFFCDC">
+<meta property="og:title" content="Navora Store App — Navora for Stores">
+<meta property="og:description" content="Run your Navora store from one place: orders, products, stock, riders and settlements in the Navora Store App.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="fredoka-semibold.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.remove('no-js');</script>
+<script src="main.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true"><symbol id="i-store" viewBox="0 0 24 24"><path d="M3.5 9.5 5 4h14l1.5 5.5"/><path d="M4.5 10v10h15V10"/><path d="M3.5 9.5a2.8 2.8 0 0 0 5.6 0 2.8 2.8 0 0 0 5.8 0 2.8 2.8 0 0 0 5.6 0"/><path d="M9.5 20v-5h5v5"/></symbol><symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1.2 11.2A2 2 0 0 1 15.8 21H8.2a2 2 0 0 1-2-1.8L5 8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></symbol><symbol id="i-box" viewBox="0 0 24 24"><path d="M3.5 7.5 12 3l8.5 4.5v9L12 21l-8.5-4.5z"/><path d="m3.5 7.5 8.5 4.5 8.5-4.5"/><path d="M12 12v9"/></symbol><symbol id="i-scooter" viewBox="0 0 24 24"><circle cx="6" cy="17" r="2.5"/><circle cx="18" cy="17" r="2.5"/><path d="M8.5 17h6l2.3-6.5H13"/><path d="M15.6 10.5 14.2 5H12"/><path d="M3.5 13.5h5.5l1.5 3.5"/></symbol><symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 4.8-9 4.8-9-4.8z"/><path d="m3 12.2 9 4.8 9-4.8"/><path d="m3 16.4 9 4.6 9-4.6"/></symbol><symbol id="i-wallet" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="14" rx="3"/><path d="M3 10h18"/><path d="M16 15h2"/><path d="M6 6 15.5 3.2a1.5 1.5 0 0 1 1.9 1L18 6"/></symbol><symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11.6A7 7 0 0 0 5 9.4C5 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></symbol><symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8"/><path d="M21.5 20a6.5 6.5 0 0 0-3.4-5.7"/></symbol><symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 16v-5a6 6 0 1 1 12 0v5l1.8 2H4.2z"/><path d="M10 21h4"/></symbol><symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.4a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1.1.9-1.1 1.6v.4"/><path d="M12 17v.01"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol><symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol><symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></symbol><symbol id="i-tag" viewBox="0 0 24 24"><path d="M3.5 12V4.5H11l9.5 9.5-7 7z"/><circle cx="7.8" cy="8.8" r="1.4"/></symbol><symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="5" y="4.5" width="14" height="16.5" rx="2.2"/><path d="M9 3.5h6V7H9z"/><path d="M9 11.5h6M9 15.5h4"/></symbol><symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16"/><path d="m8 15.5 3.5-4 3 2.5L20 8"/></symbol><symbol id="i-userplus" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M19 8v6M16 11h6"/></symbol><symbol id="i-arrow-r" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol><symbol id="i-arrow-l" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol><symbol id="i-chev-r" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol><symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol><symbol id="i-phone" viewBox="0 0 24 24"><rect x="6.5" y="2.5" width="11" height="19" rx="2.8"/><path d="M11 18.5h2"/></symbol><symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 20 6v6c0 4.6-3.4 8.3-8 9-4.6-.7-8-4.4-8-9V6z"/><path d="m9 12 2 2 4-4"/></symbol><symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></symbol><symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2.4l2.3 11h10.5L21 7.5H6.4"/><circle cx="9.5" cy="19.3" r="1.5"/><circle cx="17" cy="19.3" r="1.5"/></symbol><symbol id="i-basket" viewBox="0 0 24 24"><path d="M3 10h18l-2 10H5z"/><path d="M7.5 10 11 4M16.5 10 13 4"/><path d="M9 13.5v3.5M12 13.5v3.5M15 13.5v3.5"/></symbol><symbol id="i-loaf" viewBox="0 0 24 24"><path d="M6 11.5A4 4 0 0 1 7 3.6h10a4 4 0 0 1 1 7.9V19a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 6 19z"/><path d="M10 8v3.5M14 8v3.5"/></symbol><symbol id="i-apple" viewBox="0 0 24 24"><path d="M12 7.5c-1.6-1.3-5-1.4-6.3 1.6-1.4 3.2-.2 8.8 2.6 10.8 1.4 1 2.4.2 3.7.2s2.3.8 3.7-.2c2.8-2 4-7.6 2.6-10.8-1.3-3-4.7-2.9-6.3-1.6Z"/><path d="M12 7.5c0-2 .9-3.5 2.8-4"/></symbol><symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3.5 2.5 5.3 5.8.7-4.3 4 1.1 5.7L12 16.4l-5.1 2.8L8 13.5l-4.3-4 5.8-.7z"/></symbol><symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8.5 6H15a3.5 3.5 0 0 1 0 7H9a3.5 3.5 0 0 0 0 7h6.5"/></symbol><symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9.5L4 20z"/><path d="M8 9.5h8M8 12.5h5"/></symbol><symbol id="i-edit" viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="m13.5 6.5 4 4"/></symbol><symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 7.8v.01"/></symbol><symbol id="i-rupee" viewBox="0 0 24 24"><path d="M7 4h10M7 8.5h10"/><path d="M7 4c6 0 6 9.5 0 9.5H6l7.5 6.5"/></symbol><symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19C5 11 10 5.5 19.5 5 19.5 14 14 19 6 19"/><path d="m5 19 7-7"/></symbol><symbol id="i-doc" viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h4"/></symbol><symbol id="i-home" viewBox="0 0 24 24"><path d="M3.5 11 12 4l8.5 7"/><path d="M5.5 9.5V20h13V9.5"/></symbol><symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></symbol><symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4 2.8 19.5h18.4z"/><path d="M12 10v4.5M12 17v.01"/></symbol><symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="15" r="4"/><path d="m11 12 8-8M16 7l2.5 2.5M14 9l2 2"/></symbol><symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol><symbol id="i-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v2.5M12 18.5V21M3 12h2.5M18.5 12H21M5.6 5.6l1.8 1.8M16.6 16.6l1.8 1.8M5.6 18.4l1.8-1.8M16.6 7.4l1.8-1.8"/></symbol><symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="3"/></symbol><symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></symbol></svg>
+<header class="site-header" id="top">
+  <div class="wrap header-bar">
+    <a class="logo" href="index.html" aria-label="Navora for Stores — home"><img src="navora-logo-240.webp" srcset="navora-logo-240.webp 1x, navora-logo-480.webp 2x" width="240" height="75" alt="Navora"></a>
+    <nav class="nav" aria-label="Main"><ul><li><a href="how-it-works.html">How It Works</a></li><li><a href="features.html">Features</a></li><li><a href="delivery.html">Delivery</a></li><li><a href="settlements.html">Settlements</a></li><li><a href="service-areas.html">Service Areas</a></li><li><a href="faq.html">FAQ</a></li></ul></nav>
+    <div class="header-cta">
+      <a class="btn btn-ghost btn-sm" href="login.html">Store Login</a>
+      <a class="btn btn-primary btn-sm" href="partner.html#apply">Join Navora</a>
+    </div>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><svg class="ic i-menu" aria-hidden="true"><use href="#i-menu"/></svg><svg class="ic i-close" aria-hidden="true"><use href="#i-x"/></svg></button>
+  </div>
+  <div class="mobile-sheet" id="mobile-menu">
+    <nav aria-label="Mobile"><ul><li><a class="m-link" href="index.html">Home<svg class="ic" aria-hidden="true"><use href="#i-chev-r"/></svg></a></li><li><a class="m-link" href="how-it-works.html">How It Works<svg class="ic" aria-hidden="true"><use href="#i-chev-r"/></svg></a></li><li><a class="m-link" href="features.html">Features<svg class="ic" aria-hidden="true"><use href="#i-chev-r"/></svg></a></li><li><a class="m-link" href="delivery.html">Delivery<svg class="ic" aria-hidden="true"><use href="#i-chev-r"/></svg></a></li><li><a class="m-link" href="settlements.html">Settlements<svg class="ic" aria-hidden="true"><use href="#i-chev-r"/></svg></a></li><li><a class="m-link" href="service-areas.html">Service Areas<svg class="ic" aria-hidden="true"><use href="#i-chev-r"/></svg></a></li><li><a class="m-link" href="faq.html">FAQ<svg class="ic" aria-hidden="true"><use href="#i-chev-r"/></svg></a></li><li><a class="m-link" href="partner.html">Partner With Us<svg class="ic" aria-hidden="true"><use href="#i-chev-r"/></svg></a></li></ul></nav>
+    <div class="m-cta"><a class="btn btn-secondary" href="login.html">Store Login</a><a class="btn btn-primary" href="partner.html#apply">Join Navora</a></div>
+  </div>
+</header>
+<main id="main">
+<section class="page-hero" aria-labelledby="ph-title">
+<div class="wrap ph-grid">
+<div class="ph-copy">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="index.html"><svg class="ic" aria-hidden="true"><use href="#i-arrow-l"/></svg>Home</a><span aria-hidden="true">/</span><span aria-current="page">Store App</span></nav>
+<h1 class="h1" id="ph-title">Run your Navora store from one place</h1>
+<p class="lead">The Navora Store App helps your store manage orders, products, riders, stock and settlements — right from your phone.</p>
+<div class="btn-row"><a class="btn btn-primary btn-lg" href="features.html">Explore Store Features <svg class="ic" aria-hidden="true"><use href="#i-arrow-r"/></svg></a><a class="btn btn-secondary btn-lg" href="login.html">Store Login</a></div>
+</div>
+<div class="ph-art"><img src="mascot-otp.webp" width="420" height="471" alt="Navo, the Navora squirrel, holding a phone"></div>
+</div>
+</section>
+<section class="section" aria-labelledby="scr-title">
+<div class="wrap">
+<div class="head"><span class="eyebrow">Screens</span><h2 class="h2" id="scr-title">A look inside the Store App</h2><p class="lead">Swipe through the main screens.</p></div>
+<div class="screens-row" tabindex="0" aria-label="Store App screens, scrollable">
+<figure><div class="phone" role="img" aria-label="Sample Navora Store app home screen with today’s orders and a new incoming order">
+<div class="screen" aria-hidden="true">
+<span class="notch"></span>
+<div class="s-head"><div class="r"><div><div class="hello">Good morning</div><div class="name">Malabar Fresh</div></div><span class="tag tag-green">● Open</span></div></div>
+<div class="s-body">
+<div class="s-stats"><div class="s-stat hl"><small>Total orders</small><b>18</b></div><div class="s-stat"><small>Active orders</small><b>4</b></div></div>
+<div class="s-label">New orders</div>
+<div class="s-card new"><div class="r"><b>#NV1042</b><span class="tag tag-amber">New</span></div><small>6 items · ₹486 · Confirmed COD</small><div class="s-btns"><span class="no">Reject</span><span class="yes">Accept</span></div></div>
+<div class="s-card"><div class="r"><b>#NV1039</b><span class="tag tag-tint">Preparing</span></div><small>4 of 7 items packed</small></div>
+<div class="s-card"><div class="r"><b>#NV1036</b><span class="tag tag-navy">Ready</span></div><small>Rider arriving in 3 min</small></div>
+</div>
+<div class="s-nav"><span class="on"><svg class="ic" aria-hidden="true"><use href="#i-home"/></svg>Home</span><span><svg class="ic" aria-hidden="true"><use href="#i-bag"/></svg>Orders</span><span><svg class="ic" aria-hidden="true"><use href="#i-box"/></svg>Products</span><span><svg class="ic" aria-hidden="true"><use href="#i-store"/></svg>Profile</span></div>
+</div>
+</div>
+<figcaption>Store home</figcaption></figure>
+<figure><div class="phone" role="img" aria-label="Sample incoming order screen listing items with Accept and Reject buttons">
+<div class="screen" aria-hidden="true">
+<span class="notch"></span>
+<div class="s-head"><div class="r"><div class="title">Incoming order</div><span class="tag tag-amber">New</span></div><small class="hello">#NV1042 · Confirmed COD · 1.2 km</small></div>
+<div class="s-body">
+<div class="s-card"><div class="s-row"><span class="s-thumb"><img src="p-milk.webp" alt=""></span><div><b>Toned Milk 1 L</b><small>Qty 2</small></div><b>₹112</b></div></div>
+<div class="s-card"><div class="s-row"><span class="s-thumb"><img src="p-bread.webp" alt=""></span><div><b>Sandwich Bread</b><small>Qty 1</small></div><b>₹45</b></div></div>
+<div class="s-card"><div class="s-row"><span class="s-thumb"><img src="p-eggs.webp" alt=""></span><div><b>Eggs · 12 pack</b><small>Qty 1</small></div><b>₹96</b></div></div>
+<div class="s-card"><div class="s-row"><span class="s-thumb"><img src="p-banana.webp" alt=""></span><div><b>Banana 1 kg</b><small>Qty 1</small></div><b>₹62</b></div></div>
+<div class="s-card"><div class="r"><small>Item total</small><b>₹486</b></div></div>
+<div class="s-btns" style="margin-top:auto"><span class="no">Reject</span><span class="yes">Accept order</span></div>
+</div>
+</div>
+</div>
+<figcaption>Incoming order</figcaption></figure>
+<figure><div class="phone" role="img" aria-label="Sample Navora Store app orders screen with New, Preparing, Ready and Completed tabs">
+<div class="screen" aria-hidden="true">
+<span class="notch"></span>
+<div class="s-head"><div class="title">Orders</div><div class="s-tabs"><span class="on">New · 2</span><span>Preparing</span><span>Ready</span><span>Completed</span></div></div>
+<div class="s-body">
+<div class="s-card new"><div class="r"><b>#NV1042</b><span class="tag tag-amber">New</span></div>
+<div class="s-row"><span class="s-thumb"><img src="p-milk.webp" alt=""></span><span class="s-thumb"><img src="p-bread.webp" alt=""></span><span class="s-thumb"><img src="p-eggs.webp" alt=""></span><div><small>+3 more items</small></div></div>
+<small>₹486 · Confirmed COD · 1.2 km</small><div class="s-btns"><span class="no">Reject</span><span class="yes">Accept</span></div></div>
+<div class="s-card new"><div class="r"><b>#NV1043</b><span class="tag tag-amber">New</span></div>
+<div class="s-row"><span class="s-thumb"><img src="p-banana.webp" alt=""></span><span class="s-thumb"><img src="p-curd.webp" alt=""></span><div><small>2 items</small></div></div>
+<small>₹148 · Paid online · 0.8 km</small><div class="s-btns"><span class="no">Reject</span><span class="yes">Accept</span></div></div>
+<div class="s-card"><div class="r"><b>#NV1031</b><span class="tag tag-grey">Completed</span></div><small>Delivered by Navora Rider</small></div>
+</div>
+<div class="s-nav"><span><svg class="ic" aria-hidden="true"><use href="#i-home"/></svg>Home</span><span class="on"><svg class="ic" aria-hidden="true"><use href="#i-bag"/></svg>Orders</span><span><svg class="ic" aria-hidden="true"><use href="#i-box"/></svg>Products</span><span><svg class="ic" aria-hidden="true"><use href="#i-store"/></svg>Profile</span></div>
+</div>
+</div>
+<figcaption>Orders</figcaption></figure>
+<figure><div class="phone" role="img" aria-label="Sample Navora Store app products screen with prices, stock levels and availability switches">
+<div class="screen" aria-hidden="true">
+<span class="notch"></span>
+<div class="s-head"><div class="r"><div class="title">Products</div><span class="tag tag-green">+ Add product</span></div><div class="s-search"><svg class="ic" aria-hidden="true"><use href="#i-search"/></svg>Search products</div></div>
+<div class="s-body">
+<div class="s-tabs"><span class="on">All products</span><span>Low stock</span><span>Out of stock</span></div>
+<div class="s-card"><div class="s-row"><span class="s-thumb"><img src="p-milk.webp" alt=""></span><div><b>Toned Milk 1 L</b><small>₹56 · 24 in stock</small></div><span class="s-toggle"></span></div></div>
+<div class="s-card"><div class="s-row"><span class="s-thumb"><img src="p-curd.webp" alt=""></span><div><b>Curd 500 g</b><small>₹40 · <span style="color:#7A4B00;font-weight:800">Low stock · 4</span></small></div><span class="s-toggle"></span></div></div>
+<div class="s-card"><div class="s-row"><span class="s-thumb"><img src="p-bread.webp" alt=""></span><div><b>Sandwich Bread</b><small>₹45 · 12 in stock</small></div><span class="s-toggle"></span></div></div>
+<div class="s-card"><div class="s-row"><span class="s-thumb"><img src="p-paneer.webp" alt=""></span><div><b>Fresh Paneer 200 g</b><small>₹90 · Out of stock</small></div><span class="s-toggle off"></span></div></div>
+</div>
+<div class="s-nav"><span><svg class="ic" aria-hidden="true"><use href="#i-home"/></svg>Home</span><span><svg class="ic" aria-hidden="true"><use href="#i-bag"/></svg>Orders</span><span class="on"><svg class="ic" aria-hidden="true"><use href="#i-box"/></svg>Products</span><span><svg class="ic" aria-hidden="true"><use href="#i-store"/></svg>Profile</span></div>
+</div>
+</div>
+<figcaption>Products</figcaption></figure>
+<figure><div class="phone" role="img" aria-label="Sample add product screen with photo, name, category, selling price, stock and active switch">
+<div class="screen" aria-hidden="true">
+<span class="notch"></span>
+<div class="s-head"><div class="title">Add product</div></div>
+<div class="s-body">
+<div class="s-photo"><img src="p-curd.webp" alt=""></div>
+<div class="s-field"><small>Product name</small><b>Curd 500 g</b></div>
+<div class="s-field"><small>Category</small><b>Dairy</b></div>
+<div class="s-stats"><div class="s-field"><small>Selling price</small><b>₹40</b></div><div class="s-field"><small>Stock</small><b>20</b></div></div>
+<div class="s-card"><div class="r"><b>Active on Navora</b><span class="s-toggle"></span></div><small>Customers can see and order this product</small></div>
+<div class="s-cta" style="margin-top:auto">Save product</div>
+</div>
+</div>
+</div>
+<figcaption>Add product</figcaption></figure>
+<figure><div class="phone" role="img" aria-label="Sample riders screen showing the store’s own riders and a button to add a rider">
+<div class="screen" aria-hidden="true">
+<span class="notch"></span>
+<div class="s-head"><div class="r"><div class="title">Riders</div><span class="tag tag-green">+ Add rider</span></div></div>
+<div class="s-body">
+<div class="s-card"><div class="r"><b>Navora Delivery</b><span class="s-toggle"></span></div><small>Use Navora riders when your team is busy</small></div>
+<div class="s-label">Your riders</div>
+<div class="s-card"><div class="s-row"><span class="s-thumb"><svg class="ic" aria-hidden="true"><use href="#i-scooter"/></svg></span><div><b>Arjun K.</b><small>Connected · on delivery</small></div><span class="tag tag-tint">Online</span></div></div>
+<div class="s-card"><div class="s-row"><span class="s-thumb"><svg class="ic" aria-hidden="true"><use href="#i-scooter"/></svg></span><div><b>Faisal M.</b><small>Connected · available</small></div><span class="tag tag-tint">Online</span></div></div>
+<div class="s-card"><div class="s-row"><span class="s-thumb"><svg class="ic" aria-hidden="true"><use href="#i-scooter"/></svg></span><div><b>Rahul P.</b><small>Connected</small></div><span class="tag tag-grey">Offline</span></div></div>
+<div class="s-card"><div class="r"><b>Assign #NV1039</b><span class="tag tag-navy">Faisal M.</span></div></div>
+</div>
+<div class="s-nav"><span><svg class="ic" aria-hidden="true"><use href="#i-home"/></svg>Home</span><span><svg class="ic" aria-hidden="true"><use href="#i-bag"/></svg>Orders</span><span><svg class="ic" aria-hidden="true"><use href="#i-box"/></svg>Products</span><span class="on"><svg class="ic" aria-hidden="true"><use href="#i-store"/></svg>Profile</span></div>
+</div>
+</div>
+<figcaption>Riders</figcaption></figure>
+<figure><div class="phone" role="img" aria-label="Sample settlements screen with settlement status and payout history; amounts are placeholders">
+<div class="screen" aria-hidden="true">
+<span class="notch"></span>
+<div class="s-head"><div class="title">Settlements</div><small class="hello">Bank account ···· 4410</small></div>
+<div class="s-body">
+<div class="s-stat hl"><small>Next payout</small><b>₹ —</b><small>Status: Processing</small></div>
+<div class="s-label">Payout history</div>
+<div class="s-card"><div class="r"><b>Settlement #S-108</b><span class="tag tag-amber">Processing</span></div><small>24 orders · ₹ —</small></div>
+<div class="s-card"><div class="r"><b>Settlement #S-107</b><span class="tag tag-green">Paid</span></div><small>31 orders · ₹ —</small></div>
+<div class="s-card"><div class="r"><b>Settlement #S-106</b><span class="tag tag-green">Paid</span></div><small>27 orders · ₹ —</small></div>
+<div class="s-card"><div class="r"><b>Settlement #S-105</b><span class="tag tag-green">Paid</span></div><small>22 orders · ₹ —</small></div>
+</div>
+<div class="s-nav"><span><svg class="ic" aria-hidden="true"><use href="#i-home"/></svg>Home</span><span><svg class="ic" aria-hidden="true"><use href="#i-bag"/></svg>Orders</span><span><svg class="ic" aria-hidden="true"><use href="#i-box"/></svg>Products</span><span class="on"><svg class="ic" aria-hidden="true"><use href="#i-store"/></svg>Profile</span></div>
+</div>
+</div>
+<figcaption>Settlements</figcaption></figure>
+</div>
+<p class="small muted">Sample screens for illustration. Store names, orders and figures are examples; amounts in settlements are placeholders.</p>
+</div>
+</section>
+<section class="section" id="features" aria-labelledby="feat-title">
+<div class="wrap">
+<div class="head-row">
+<div class="head reveal">
+<span class="eyebrow">Store features</span>
+<h2 class="h2" id="feat-title">Run your store from one place</h2>
+<p class="lead">Four simple areas cover everything — on the Navora Store app.</p>
+</div>
+<a class="link-arrow reveal" href="features.html">All store features <svg class="ic" aria-hidden="true"><use href="#i-arrow-r"/></svg></a>
+</div>
+<div class="showcase">
+<article class="sc-card tint reveal">
+<div class="sc-copy"><span class="eyebrow">Orders</span><h3>Never miss an order</h3><p>New orders arrive with an alert. Accept or reject, prepare, and look back at every past order.</p>
+<ul class="sc-list"><li>Incoming orders</li><li>Accept / reject</li><li>Prepare order</li><li>Order history</li></ul></div>
+<div class="sc-ui" aria-hidden="true">
+<div class="ui-card raise"><div class="r"><b>#NV1042</b><span class="tag tag-amber">New</span></div><small>6 items · ₹486 · 1.2 km</small><div class="s-btns"><span class="no">Reject</span><span class="yes">Accept</span></div></div>
+<div class="ui-card"><div class="r"><b>#NV1039</b><span class="tag tag-tint">Preparing</span></div><small>4 of 7 items packed</small></div>
+<div class="ui-card"><div class="r"><b>#NV1031</b><span class="tag tag-grey">Completed</span></div></div>
+</div>
+</article>
+<article class="sc-card reveal">
+<div class="sc-copy"><span class="eyebrow">Products &amp; stock</span><h3>Your catalogue, your prices</h3><p>Add products, set your own selling price, keep stock up to date and control what customers can see.</p>
+<ul class="sc-list"><li>Product list</li><li>Selling prices</li><li>Stock levels</li><li>Availability on / off</li></ul></div>
+<div class="sc-ui" aria-hidden="true">
+<div class="ui-card"><div class="s-row"><img src="p-milk.webp" alt="" width="34" height="34" loading="lazy"><div><b>Toned Milk 1 L</b><small>₹56 · 24 in stock</small></div><span class="s-toggle"></span></div></div>
+<div class="ui-card raise"><div class="s-row"><img src="p-curd.webp" alt="" width="34" height="34" loading="lazy"><div><b>Curd 500 g</b><small>Low stock · 4 left</small></div><span class="tag tag-amber">Low</span></div></div>
+<div class="ui-card"><div class="s-row"><img src="p-paneer.webp" alt="" width="34" height="34" loading="lazy"><div><b>Fresh Paneer</b><small>Out of stock</small></div><span class="s-toggle off"></span></div></div>
+</div>
+</article>
+<article class="sc-card reveal">
+<div class="sc-copy"><span class="eyebrow">Team &amp; delivery</span><h3>Your people, connected</h3><p>Add your own riders and staff, assign orders, or let Navora riders handle delivery.</p>
+<ul class="sc-list"><li>Add riders</li><li>Assign orders</li><li>Store staff</li><li>Delivery options</li></ul></div>
+<div class="sc-ui" aria-hidden="true">
+<div class="ui-card"><div class="s-row"><span class="s-thumb"><svg class="ic" aria-hidden="true"><use href="#i-scooter"/></svg></span><div><b>Arjun K.</b><small>Your rider · on delivery</small></div><span class="tag tag-tint">Online</span></div></div>
+<div class="ui-card raise"><div class="r"><b>Assign #NV1039</b><span class="tag tag-navy">Faisal M.</span></div><small>Or send to Navora Delivery</small></div>
+<div class="ui-card"><div class="s-row"><span class="s-thumb"><svg class="ic" aria-hidden="true"><use href="#i-users"/></svg></span><div><b>Staff</b><small>3 team members</small></div></div></div>
+</div>
+</article>
+<article class="sc-card tint reveal">
+<div class="sc-copy"><span class="eyebrow">Money &amp; operations</span><h3>Clear money, smooth days</h3><p>Follow settlements and payouts, set your opening hours and reach Navora support when you need it.</p>
+<ul class="sc-list"><li>Settlements</li><li>Payout history</li><li>Store hours</li><li>Support</li></ul></div>
+<div class="sc-ui" aria-hidden="true">
+<div class="ui-card raise"><div class="r"><b>Settlement #S-108</b><span class="tag tag-amber">Processing</span></div><small>24 orders · ₹ —</small></div>
+<div class="ui-card"><div class="r"><b>Store hours</b><span class="tag tag-green">Open now</span></div><small>Mon–Sun · 7:00 am – 10:00 pm</small></div>
+<div class="ui-card"><div class="r"><b>Support</b><span class="tag tag-grey">Help centre</span></div></div>
+</div>
+</article>
+</div>
+</div>
+</section>
+
+<section class="section" aria-labelledby="final-title">
+<div class="wrap">
+<div class="final reveal">
+<div class="copy">
+<h2 class="h2" id="final-title">Ready to grow with Navora?</h2>
+<p>Bring your local store online and prepare for faster local ordering and delivery.</p>
+<div class="btn-row"><a class="btn btn-dark btn-lg" href="partner.html#apply">Become a Partner <svg class="ic" aria-hidden="true"><use href="#i-arrow-r"/></svg></a><a class="btn btn-secondary btn-lg" href="login.html">Store Login</a></div>
+</div>
+<div class="final-art" aria-hidden="true"><img class="mascot" src="mascot-store-basket.webp" width="520" height="539" alt="" loading="lazy"><img class="bag" src="grocery-bag.webp" width="320" height="360" alt="" loading="lazy"></div>
+</div>
+</div>
+</section>
+
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="f-top">
+      <div class="f-brand">
+        <a href="index.html" aria-label="Navora — home"><img src="navora-logo-480.webp" width="480" height="150" alt="Navora" loading="lazy"></a>
+        <p>Kerala’s local quick-commerce platform, helping nearby stores take online orders and deliver to customers around them. Launching first in Manjeri.</p>
+      </div>
+      <div class="f-cols">
+        <nav aria-labelledby="fc1"><h2 id="fc1">Company</h2><ul><li><a href="index.html#about">About Navora</a></li><li><a href="how-it-works.html">How It Works</a></li><li><a href="service-areas.html">Service Areas</a></li></ul></nav>
+        <nav aria-labelledby="fc2"><h2 id="fc2">Stores</h2><ul><li><a href="partner.html">Become a Partner</a></li><li><a href="login.html">Store Login</a></li><li><a href="features.html">Store Features</a></li><li><a href="store-app.html">Store App</a></li></ul></nav>
+        <nav aria-labelledby="fc3"><h2 id="fc3">Support</h2><ul><li><a href="help.html">Help</a></li><li><a href="faq.html">FAQ</a></li><li><a href="help.html#contact">Contact</a></li></ul></nav>
+        <nav aria-labelledby="fc4"><h2 id="fc4">Legal</h2><ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms</a></li></ul></nav>
+      </div>
+    </div>
+    <div class="f-bottom"><span>© <span data-year>2026</span> Navora · Manjeri, Kerala</span><a href="https://navoranow.com">navoranow.com</a></div>
+  </div>
+</footer>
+</body>
+</html>
